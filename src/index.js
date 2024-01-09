@@ -1,5 +1,5 @@
 import "./style.css";
-import { newToDo } from "./newToDo";
+import newToDo from "./newToDo";
 
 // import Icon from './icon.png';
 
@@ -11,4 +11,6 @@ test.textContent = "testing css!!";
 
 containerSelect.appendChild(test);
 
-newToDo();
+const todo1 = newToDo();
+todo1.test = 1;
+console.log(todo1.test);
