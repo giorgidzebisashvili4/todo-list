@@ -11,6 +11,6 @@ test.textContent = "testing css!!";
 
 containerSelect.appendChild(test);
 
-const todo1 = newToDo();
-todo1.test = 1;
-console.log(todo1.test);
+const todo1 = newToDo("sada", "dasda", "adasd", "adsdasd");
+
+console.log(todo1.card);

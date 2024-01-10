@@ -1,6 +1,9 @@
 function newToDo(title, description, dueDate, priority) {
-  const test = 0;
-  return { test };
+  const todo = { title, description, dueDate, priority };
+  const card = `title: ${todo.title}`;
+  // dom card constructor that saves tamplate
+
+  return { card };
 }
 
 export default newToDo;
