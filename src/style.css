@@ -5,11 +5,14 @@
     font-weight: 600;
     font-style: normal;
   } */
-
-.container {
-  color: red;
-  /* background: url('./icon.png'); */
+/* background: url('./icon.png'); */
+:root {
+  --color-white: white;
+  --color-gray: rgb(222, 222, 222);
+  --color-green: rgb(62, 191, 50);
+  --color-black: rgb(27, 27, 27);
 }
+
 li {
   margin-bottom: 10px;
 }
@@ -18,4 +21,52 @@ li button {
   font-size: 8px;
   margin-left: 20px;
   color: #666;
+}
+
+.header {
+  background-color: var(--color-gray);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  border-bottom: 4px solid var(--color-green);
+}
+
+.header > button {
+  height: 20px;
+}
+.logo {
+  display: flex;
+  gap: 10px;
+  color: var(--color-green);
+}
+.logo > img {
+  width: 50px;
+}
+
+.body {
+  display: flex;
+}
+.sideBar,
+.todos {
+  height: 600px;
+  padding: 15px;
+}
+.sideBar {
+  width: 200px;
+  background-color: var(--color-white);
+}
+.todos {
+  flex: 1;
+  background-color: var(--color-gray);
+}
+.sideBar h1 {
+  border-bottom: 4px solid var(--color-green);
+  margin: 0;
+  padding: 5px 0 5px 0;
+  margin: 0px 0 10px 0;
+}
+
+.sideBar div {
+  padding: 5px 0 5px 0;
 }

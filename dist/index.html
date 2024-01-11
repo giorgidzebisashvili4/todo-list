@@ -7,20 +7,42 @@
     <title>Template</title>
   </head>
   <body>
-    <div class="testing">
+    <!-- <div class="testing">
       <label for="test">name</label>
       <input type="text" name="test" id="test" />
       <button class="testbtn">save</button>
     </div>
     <div class="ulDiv">
       <ul></ul>
-    </div>
+    </div> -->
 
     <div class="container">
-      <div class="header"></div>
+      <div class="header">
+        <button>side bar</button>
+        <div class="logo">
+          <img src="/src/logo.svg" alt="" class="logo-img" />
+          <h1>to do list</h1>
+        </div>
+        <button>theme</button>
+      </div>
       <div class="body">
-        <div class="projects"></div>
-        <div class="todos"></div>
+        <div class="sideBar">
+          <div class="main">
+            <h1>main</h1>
+            <div class="title" id="allTasks">all Tasks</div>
+            <div class="title" id="todayTasks">Today</div>
+            <div class="title" id="thisWeekTasks">This week</div>
+            <div class="title" id="importantTasks">Important</div>
+          </div>
+          <div class="project">
+            <h1>projects</h1>
+            <div class="projectsAdd">
+              <div>study</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="todos">to do</div>
       </div>
     </div>
     <script src="bundle.js"></script>
