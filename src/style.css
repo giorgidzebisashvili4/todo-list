@@ -1,16 +1,16 @@
-/* @font-face {
-    font-family: 'MyFont';
-    src: url('./my-font.woff2') format('woff2'),
-      url('./my-font.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-  } */
+@font-face {
+  font-family: "MyFont";
+  src: url(./Roboto-Medium.ttf) format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
 /* background: url('./icon.png'); */
 :root {
   --color-white: white;
   --color-gray: rgb(238, 238, 238);
   --color-green: rgb(62, 191, 50);
   --color-black: rgb(27, 27, 27);
+  font-family: MyFont, sans-serif;
 }
 
 li {
@@ -32,9 +32,6 @@ li button {
   border-bottom: 4px solid var(--color-green);
 }
 
-.header > button {
-  height: 20px;
-}
 .logo {
   display: flex;
   gap: 10px;
@@ -67,7 +64,7 @@ li button {
   margin: 0px 0 10px 0;
 }
 
-.sideBar div {
+.main div {
   padding: 5px 0 5px 0;
 }
 .titleDisplay {
@@ -84,16 +81,48 @@ li button {
   margin-top: 10px;
 }
 
-button {
+.header button {
   transition-duration: 0.4s;
   border: none;
   text-decoration: none;
   border: 2px solid var(--color-green);
   border-radius: 4px;
   color: var(--color-black);
+  height: 30px;
 }
 
-button:hover {
+.header button:hover {
   background-color: var(--color-green);
   color: var(var(--color-white));
+}
+
+.projects > div:hover {
+  background-color: var(--color-gray);
+  border-radius: 10px;
+}
+
+.addProject {
+  border: none;
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+input {
+  all: unset;
+}
+.inputDiv {
+  display: grid;
+}
+.project,
+.inputDiv {
+  padding: 10px;
 }
