@@ -32,7 +32,7 @@ function createProjects() {
     // adding DOM project name from input
     addBtn.addEventListener("click", () => {
       // not save if nothing is typed
-      if (projectInput.value != "") {
+      if (projectInput.value !== "") {
         const inputValue = projectInput.value;
         //   remove input div
         const projectDiv = document.createElement("div");
@@ -52,6 +52,10 @@ function createProjects() {
         nameProjectBtnDiv.appendChild(renameProject);
         nameProjectBtnDiv.appendChild(deleteProject);
         projectSection.appendChild(projectDiv);
+
+        deleteProject.addEventListener("click", () => {
+          projectSection.removeChild(projectDiv);
+        });
       }
     });
 

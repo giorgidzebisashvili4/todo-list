@@ -75,9 +75,6 @@ li button {
   padding: 10px 0px 10px 30px;
 }
 .cards {
-  border: 2px solid var(--color-black);
-  border-radius: 10px;
-  padding: 15px;
   margin-top: 10px;
 }
 
@@ -125,4 +122,18 @@ input {
 .project,
 .inputDiv {
   padding: 10px;
+}
+
+.cardInput {
+  padding: 20px 0 20px 0;
+  display: grid;
+  gap: 10px;
+  font-size: large;
+}
+
+.cardDiv {
+  border: 2px solid var(--color-black);
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 10px;
 }
